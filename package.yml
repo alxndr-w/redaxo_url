@@ -1,7 +1,7 @@
-package: url
-version: '2.0.0-dev'
+package: url2
+version: '2.0.0.1-dev'
 author: Thomas Blum
-supportpage: www.redaxo.org/de/forum/
+supportpage: https://github.com/alxndr-w/redaxo_url/
 
 page:
     title: 'translate:url'
@@ -22,12 +22,14 @@ page:
             subPath: README.md
             itemclass: pull-right
 
-requires:
-    redaxo: ^5.4.0
+conflicts:
     packages:
-        yrewrite: ^2.2.0
+        url: '*'
+        
+requires:
+    redaxo: ^5.11.0
+    packages:
+        yrewrite: ^2.5.0
     php:
         extensions: [intl]
-        version: ^7.0
-
-#load: late
+        version: ^7.3
