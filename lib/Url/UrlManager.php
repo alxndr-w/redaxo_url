@@ -1,8 +1,5 @@
 <?php
 
-/**
- * This file is part of the Url package.
- */
 
 namespace Url;
 
@@ -283,7 +280,7 @@ class UrlManager
         $rewriterSuffix = Url::getRewriter()->getSuffix();
         if (\rex::isFrontend() && $rewriterSuffix && substr($url->getRequestPath(), -strlen($rewriterSuffix)) !== $rewriterSuffix) {
             // URL Objekt nachfolgend neu erstellen um Parameter nicht zu verlieren
-            if(count(UrlManagerSql::getByUrl($url)) == 1) {
+            if (count(UrlManagerSql::getByUrl($url)) == 1) {
                 header('HTTP/1.1 301 Moved Permanently');
                 header('Location: '. $url->toString());
                 exit;

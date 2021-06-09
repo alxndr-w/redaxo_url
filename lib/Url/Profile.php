@@ -1,8 +1,5 @@
 <?php
 
-/**
- * This file is part of the Url package.
- */
 
 namespace Url;
 
@@ -210,7 +207,6 @@ class Profile
                 $parts[1] = $parts[0];
             }
             $array[trim($parts[0])] = trim($parts[1]);
-
         }
         return $array;
     }
@@ -485,9 +481,10 @@ class Profile
     {
         self::checkCache();
 
-        return array_unique(array_map(function (self $profile) {
-                return $profile->getArticleId();
-            }, self::$profiles)
+        return array_unique(
+            array_map(function (self $profile) {
+            return $profile->getArticleId();
+        }, self::$profiles)
         );
     }
 

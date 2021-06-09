@@ -1,8 +1,5 @@
 <?php
 
-/**
- * This file is part of the Url package.
- */
 
 namespace Url;
 
@@ -86,7 +83,8 @@ class UrlManagerSql
     public function setStructure($value)
     {
         $this->sql->setValue('is_structure', $value);
-        $this->where['is_structure'] = ($value ? '1' : '0');;
+        $this->where['is_structure'] = ($value ? '1' : '0');
+        ;
     }
 
     /**
@@ -228,7 +226,8 @@ class UrlManagerSql
      */
     public static function getHreflang(UrlManager $manager, $clangIds)
     {
-        $where = implode(' OR ',
+        $where = implode(
+            ' OR ',
             array_map(function () {
                 return '`clang_id` = ?';
             }, $clangIds)

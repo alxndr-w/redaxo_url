@@ -1,8 +1,5 @@
 <?php
 
-/**
- * This file is part of the Url package.
- */
 
 use Url\ExtensionPointManager;
 use Url\Generator;

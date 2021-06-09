@@ -14,7 +14,6 @@ class rex_yform_value_url extends rex_yform_value_abstract
 {
     public function enterObject()
     {
-
     }
 
     public function getDescription()
@@ -46,7 +45,7 @@ class rex_yform_value_url extends rex_yform_value_abstract
 
         $table = $params['params']['field']['table_name'];
         $profiles = Profile::getByTableName($table);
-        if(!count($profiles)) {
+        if (!count($profiles)) {
             return null;
         }
 

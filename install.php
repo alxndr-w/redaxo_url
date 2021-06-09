@@ -1,8 +1,5 @@
 <?php
 
-/**
- * This file is part of the Url package.
- */
 
 \rex_sql_table::get(
     \rex::getTable('url_generator_profile'))

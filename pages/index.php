@@ -1,8 +1,5 @@
 <?php
 
-/**
- * This file is part of the Url package.
- */
 
 $subpage = rex_be_controller::getCurrentPagePart(2);
 

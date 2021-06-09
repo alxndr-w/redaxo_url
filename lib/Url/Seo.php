@@ -1,8 +1,5 @@
 <?php
 
-/**
- * This file is part of the Url package.
- */
 
 namespace Url;
 
@@ -97,7 +94,6 @@ class Seo
 
         $tags = \rex_extension::registerPoint(new \rex_extension_point('URL_SEO_TAGS', $tags));
         return implode("\n", $tags);
-
     }
 
     public function getFullUrl()
@@ -176,8 +172,6 @@ class Seo
                             "\n\t\t".'<image:loc>'.$url->getSchemeAndHttpHost().$media->getUrl().'</image:loc>'.
                             $imageTitle.
                             "\n\t".'</image:image>';
-
-
                     }
                 }
 
