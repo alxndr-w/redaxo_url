@@ -2,7 +2,7 @@
 
 ## Beschreibung
 
-REDAXO 5 AddOn zur URL-Generierung für Daten aus den Datenbanktabellen (ehemals Url Control, ehemals Frau Schultze)
+Fork des beliebten REDAXO 5 AddOns zur URL-Generierung.
 
 ## Installation
 
